@@ -8,7 +8,7 @@ public class VoadoresMain {
     public static void main(String[] args) {
         RepositorioDeVoadores repositorio = new RepositorioDeVoadores();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             repositorio.adicionaVoador(recebeVoador());
         }
 
@@ -23,7 +23,7 @@ public class VoadoresMain {
 
     public static Voador recebeVoador() {
         Random r = new Random();
-        int escolha = r.nextInt(9); 
+        int escolha = r.nextInt(3); 
 
         switch (escolha) {
             case 0:

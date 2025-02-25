@@ -8,6 +8,9 @@ import java.util.List;
 public class RepositorioDeVoadores {
     private List<Voador> voadores = new ArrayList<>();
 
+    public List<Voador> getVoadores() {
+        return voadores;
+    }
 
     public boolean adicionaVoador(Voador voador) {
         return voadores.add(voador);

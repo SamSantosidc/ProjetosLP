@@ -25,6 +25,6 @@ public class Circulo implements FiguraGeometrica2D{
 
     @Override
     public int compareTo(FiguraGeometrica2D o) {
-        return 0;
+        return Double.compare(this.calcularArea(), o.calcularArea());
     }
 }
